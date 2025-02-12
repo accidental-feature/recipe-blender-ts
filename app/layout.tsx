@@ -7,12 +7,18 @@ const roboto = Roboto({ weight: ["100", "300", "400", "500", "700", "900"], subs
 
 export const metadata = {
   title: "Recipe Blender",
-  description: "A website to help you cook some delicious meals.",
+  description: "A website to help you cook some delicious meals when you have seemingly random ingredients.",
   authors: [{ name: "Kijana Richmond", url: "https://kijana.dev" }],
   icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    icon: [
+      { url: '/images/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/images/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/images/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
   },
+  manifest: '/site.webmanifest',
   category: "Food & Drink",
   keywords: ["food", "recipes", "ingredients", "cooking", "meal", "mixer"],
 };
