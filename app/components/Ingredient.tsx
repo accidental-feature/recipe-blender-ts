@@ -1,6 +1,4 @@
 import useStore from "@/utils/store";
-import React from "react";
-import { FaTrashAlt } from "react-icons/fa";
 
 type IngredientProps = {
   ingredient: Ingredient;

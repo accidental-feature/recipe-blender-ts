@@ -1,8 +1,7 @@
 "use client";
 
-import { Ingredient } from "./Ingredient";
-import { Button } from "./Button";
 import { Form } from "./Form";
+import { Ingredient } from "./Ingredient";
 
 import { createIngredient } from "@/utils/formatData";
 import useStore from "@/utils/store";
