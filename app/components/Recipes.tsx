@@ -16,7 +16,7 @@ export const RecipeList = () => {
       <h2 className="font-semibold text-2xl text-center mt-6 mb-4 sm:mb-2">
         You can make:
       </h2>
-      <ul className="w-fulljustify-center">
+      <ul className="w-full justify-center">
         {store.recipes.length !== 0 ? (
           store.recipes.map((recipe) => (
             <Recipe key={recipe.id} recipe={recipe} />
