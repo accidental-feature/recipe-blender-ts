@@ -1,6 +1,3 @@
-import Link from "next/link";
-import React from "react";
-import { Button } from "./Button";
 import ProgressCircle from "./ProgressCircle";
 
 interface RecipeProps {
@@ -8,7 +5,7 @@ interface RecipeProps {
 }
 
 export const Recipe = ({
-  recipe: { title, image, readyInMinutes, usedIngredients, missedIngredients, sourceUrl },
+  recipe: { title, readyInMinutes, usedIngredients, missedIngredients, sourceUrl },
 }: RecipeProps) => {
   const totalIngredients = usedIngredients.length + missedIngredients.length;
   const percentComplete = (usedIngredients.length / totalIngredients) * 100;

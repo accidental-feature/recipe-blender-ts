@@ -5,7 +5,7 @@ import type { NextRequest } from 'next/server'
 // In-memory storage (consider using Redis for production)
 const rateLimit = new Map()
 
-export const config = {
+const config = {
   rateLimit: {
     windowMs: 60 * 1000, // 1 minute
     maxRequests: 10, // max requests per window
